@@ -1,7 +1,7 @@
 ultralytics
 matplotlib
 opencv-python-headless
-opencv-python
+opencv-python-contrib-headless
 cv2
 Pillow
 streamlit
