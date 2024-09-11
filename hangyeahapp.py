@@ -7,7 +7,7 @@ import os
 import os.path as osp
 import torch
 
-model = YOLO('hmodel.pt')
+model = YOLO('besth.pt')
 # model = torch.hub.load(path='hmodel.pt')
 
 def ImgPre(m) :
