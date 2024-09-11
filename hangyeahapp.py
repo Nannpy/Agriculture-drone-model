@@ -5,8 +5,10 @@ import cv2
 import tempfile
 import os
 import os.path as osp
+import troch
 
-model = YOLO('hmodel.pt')
+# model = YOLO('hmodel.pt')
+model = torch.hub.load(path='hmodel.pt')
 
 def ImgPre(m) :
   image_file = st.file_uploader("Upload An Image", type=['png', 'jpeg', 'jpg'])
