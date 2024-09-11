@@ -6,7 +6,7 @@ import tempfile
 import os
 import os.path as osp
 
-model = YOLO('8n-50ep.pt')
+model = YOLO('hmodel.pt')
 
 def ImgPre(m) :
   image_file = st.file_uploader("Upload An Image", type=['png', 'jpeg', 'jpg'])
@@ -63,9 +63,9 @@ def videoPre (m):
             st.video(output_video_bytes)      
         
 def main() :
-  st.title('Safety Fall Alert')
-  st.write('Know these situations before too late')
-  st.image('headpic.png', use_column_width=True)
+  st.title('Forecast your production')
+  # st.write('Know these situations before too late')
+  # st.image('headpic.png', use_column_width=True)
   with st.sidebar:
     st.title("Option")
     option = st.selectbox('How would you like to be contacted?',('Image', 'Video'))
