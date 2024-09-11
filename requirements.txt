@@ -4,4 +4,4 @@ opencv-python-headless
 Pillow
 streamlit
 temp
-torch 
+torch >=1.7.0
