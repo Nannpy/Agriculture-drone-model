@@ -5,7 +5,7 @@ import cv2
 import tempfile
 import os
 import os.path as osp
-import troch
+import torch
 
 # model = YOLO('hmodel.pt')
 model = torch.hub.load(path='hmodel.pt')
